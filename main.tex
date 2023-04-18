@@ -42,7 +42,7 @@
 \fancyhead[R]{\footnotesize Fac. de Ciencias}   % dereecha
 \fancyfoot[R]{\footnotesize Reporte}  % Pie derecha
 \fancyfoot[C]{\thepage}  % centro
-\fancyfoot[L]{\footnotesize Reporte de conteo y medicion.}  %izquierda
+\fancyfoot[L]{\footnotesize laboratorio de qu\'imica.}  %izquierda
 \renewcommand{\footrulewidth}{0.4pt}
 
 
@@ -69,101 +69,39 @@
 \newcommand{\sen}{\operatorname{\sen}}	% Definimos el comando \sen para el seno
 %en español
 
-\title{Plantilla para Reportes IMEC-UTB}
+\title{Seguridad y materiales de laboratorio}
 % Basada en la plantilla para reportes UPIITA de  Overleaf
 
 %%%%%%%% TERMINA PREÁMBULO %%%%%%%%%%%%
 
 \begin{document}
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% PORTADA %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%
-\begin{center}																		%%%
-	\newcommand{\HRule}{\rule{\linewidth}{0.5mm}}									%%%\left
-	%%%
-	\begin{minipage}{0.48\textwidth} \begin{flushleft}
-			\includegraphics[scale = 0.9]{Imagenes/UNI_2.png}
-		\end{flushleft}\end{minipage}
-	\begin{minipage}{0.48\textwidth} \begin{flushright}
-			\includegraphics[scale = 0.075]{Imagenes/UNI.png}
-		\end{flushright}\end{minipage}
-
-	%%%
-	\vspace*{1.0cm}								%%%
-	%%%	
-	\textsc{\huge Universidad Nacional de Ingieneria }\\[1.5cm]
-
-
-	\begin{minipage}{0.9\textwidth}
-		\begin{center}																					%%%
-			\textsc{\LARGE Reporte  01 }
-		\end{center}
-	\end{minipage}\\[0.5cm]
-	%%%
-	%%%
-	\vspace*{1cm}																		%%%
-	%%%
-	\HRule \\[0.4cm]																	%%%
-	{ \huge \bfseries Laboratorio de Física I}\\[0.4cm]	%%%
-	%%%
-	\HRule \\[1.5cm]																	%%%
-	%%%
-	%%%
-	\begin{minipage}{0.46\textwidth}													%%%
-		\begin{flushleft} \large															%%%
-
-			% Aqui a continuación pongan los nombres de los integrantes
-			\emph{El grupo conformado por:}\\
-			Rocca Cruz Axel Benjamin \\
-			Llactahuaman Quispe Benjamin Israel \\
-			Cortez Núñez Christian
-
-
-			%%%
-			%\vspace*{2cm}	
-			%%%
-			%%%
-		\end{flushleft}																		%%%
-	\end{minipage}
-	%%%
-	\begin{minipage}{0.52\textwidth}
-		\vspace{-0.6cm}											%%%
-		\begin{flushright} \large															%%%
-			\emph{Profesores:} \\																	%%%
-			Tello Gálvez Julio César\\
-			Brocca Pobes Manuel Enrique%%%
-		\end{flushright}																	%%%
-	\end{minipage}
-	\vspace*{1cm}
-	%\begin{flushleft}
-
-	%\end{flushleft}
-	%%%
-	\flushleft{\textbf{\Large Física BFI01}	}\\																		%%%
-	\vspace{2cm}
-	\begin{center}
-		{\large \today}																	%%%
-	\end{center}
-\end{center}
-
-\newpage
-%%%%%%%%%%%%%%%%%%%% TERMINA PORTADA %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\input{./inputs/caratula.tex}
 
 \tableofcontents
 
 \newpage
 
-\begin{abstract}
-	El desarrollo de este primer laboratorio de física está enfocado al estudio de los distintos procesos de medición y de guiar al estudiante a experimentar la inevitable aparición de errores o incertidumbres en cualquier medición y a aprender a tratar con ellos al momento de operar los resultados.
-	La metodología de trabajo del laboratorio Nº 01 ha sido dividida en tres partes, siendo estas las siguientes:
-	\begin{itemize}
-		\item Medición y error experimental
-		\item Medición y propagación de errores
-		\item Gráfica de los resultados en una medición experimental
-	\end{itemize}
+\section{Objetivos del Experimento}
 
-\end{abstract}
+\begin{itemize}
+	\item Mediante procesos físicos separar una mezcla en sus componentes, analizando el porcentaje en peso de estas
+	\item Analizar y comprender las etiquetas de los envases de los compuestos colocados en la campana extractora por el docente.
+	\item Comprender y analizar la diferencia de temperatura de la llama en conbusti\'on e incompleta del mechero bunsen.
+\end{itemize}
 
+\section{Fundamento Teorico}
+\subsection{Metodos de separacion Fisica de las mezclas}
+Los métodos de separación de mezclas son técnicas físicas que se usan para separar los componentes de una mezcla, estas se basan en diferencias entre las propiedades físicas de los componentes de una mezcla, tales como: punto de ebullición, densidad, presión de vapor, punto de fusión, solubilidad, entre otros.
+
+La importancia de estos métodos es que nos permiten obtener sustancias puras a partir de sus mezclas, sin alterar su estructura química.
+ejemplos de métodos de separación física de las mezclas:
+\begin{itemize}
+	\item \textbf{Filtracion}: La filtración consiste en pasar una mezcla heterogénea líquido-sólido por un material filtrante que retiene el sólido y deja pasar el líquido. Los filtros pueden ser de diferentes materiales, cuya principal característica es ser poroso.
+	\item \textbf{Vaporizacion}:  Es un método de separación que consiste en separar las sustancias disueltas en el líquido, esto se debe a que estas sustancias tienen diferentes puntos de ebullición, debido a esto el que tenga el punto de ebullición más baja se evapora separandola de la otra sustancia con un punto de ebullición más alto.
+\end{itemize}
+
+\input{inputs/exp1.tex}
 \section{Bibliografía}
 \begin{itemize}
 	\item  Serway. F\'isica. Editorial McGraw-Hill (1992).\\
